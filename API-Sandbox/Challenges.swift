@@ -162,7 +162,7 @@ internal func exerciseThree() {
     printMovieNames(movies: cheapMovies)
 
 
-    
+
     /*
 
      Uncomment the below print statement and then print out the name and release date of
@@ -171,7 +171,7 @@ internal func exerciseThree() {
      */
     print("The following movies were released in 2016:")
 
-    let moviesBefore2016 = allMovies.filter { $0.releaseDate.lowercased().range(of:"2016") != nil } 
+    let moviesBefore2016 = allMovies.filter { $0.releaseDate.lowercased().range(of:"2016") != nil }
 
     printMovieNames(movies: moviesBefore2016)
 
