@@ -171,12 +171,7 @@ internal func exerciseThree() {
      */
     print("The following movies were released in 2016:")
 
-    let moviesBefore2016 = allMovies.filter({
-        if $0.releaseDate.lowercased().range(of:"2016") != nil {
-            return true
-        }
-        return false
-    })
+    let moviesBefore2016 = allMovies.filter { $0.releaseDate.lowercased().range(of:"2016") != nil } 
 
     printMovieNames(movies: moviesBefore2016)
 
