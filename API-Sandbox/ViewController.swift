@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var posterImageView: UIImageView!
     
+    var movie: Movie!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,11 +37,22 @@ class ViewController: UIViewController {
             case .success:
                 if let value = response.result.value {
                     let json = JSON(value)
+                    let jsonData = json["feed"]["entry"]
                     
                     // Do what you need to with JSON here!
                     // The rest is all boiler plate code you'll use for API requests
                     
+                    let upper = jsonData.count
+                    let rand = Int(arc4random_uniform(UInt32(upper)))
+                    let movieData = jsonData[rand]
                     
+                    self.movie = Movie(json: movieData)
+                    
+                    self.movieTitleLabel.text = self.movie.name
+                    self.rightsOwnerLabel.text = self.movie.rightsOwner
+                    self.releaseDateLabel.text = self.movie.releaseDate
+                    self.priceLabel.text = String(self.movie.price)
+                    self.loadPoster(urlString: self.movie.posterLink)
                 }
             case .failure(let error):
                 print(error)
@@ -58,7 +71,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func viewOniTunesPressed(_ sender: AnyObject) {
-        
+        UIApplication.shared.openURL(URL(string: movie.link)!)
     }
     
 }

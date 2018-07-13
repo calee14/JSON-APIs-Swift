@@ -143,6 +143,7 @@
 				TargetAttributes = {
 					BC7C844F1D1D488300BA19ED = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GCR8UYL38U;
 						LastSwiftMigration = 0920;
 					};
 				};
@@ -380,6 +381,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GCR8UYL38U;
 				INFOPLIST_FILE = "API-Sandbox/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.makeschool.API-Sandbox";
@@ -395,6 +397,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GCR8UYL38U;
 				INFOPLIST_FILE = "API-Sandbox/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.makeschool.API-Sandbox";
