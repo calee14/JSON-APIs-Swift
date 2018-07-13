@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var posterImageView: UIImageView!
+    @IBOutlet weak var viewOnItunesButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
     
     var movie: Movie!
     
@@ -30,6 +32,13 @@ class ViewController: UIViewController {
 //        exerciseTwo()
 //        exerciseThree()
         
+        viewOnItunesButton.layer.cornerRadius = 6
+        nextButton.layer.cornerRadius = 6
+        apiCall()
+        
+    }
+
+    func apiCall() {
         let apiToContact = "https://itunes.apple.com/us/rss/topmovies/limit=25/json"
         // This code will call the iTunes top 25 movies endpoint listed above
         Alamofire.request(apiToContact).validate().responseJSON() { response in
@@ -59,7 +68,6 @@ class ViewController: UIViewController {
             }
         }
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -72,6 +80,9 @@ class ViewController: UIViewController {
     
     @IBAction func viewOniTunesPressed(_ sender: AnyObject) {
         UIApplication.shared.openURL(URL(string: movie.link)!)
+    }
+    @IBAction func nextButtonTapped(_ sender: UIButton) {
+        apiCall()
     }
     
 }

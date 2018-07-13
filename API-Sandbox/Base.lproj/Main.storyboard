@@ -23,33 +23,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lg8-f5-yNi">
-                                <rect key="frame" x="40" y="60" width="303" height="330"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lg8-f5-yNi">
+                                <rect key="frame" x="36" y="60" width="303" height="398"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9K-Ux-HI7">
-                                        <rect key="frame" x="110" y="0.0" width="83.5" height="20"/>
+                                        <rect key="frame" x="110.5" y="0.0" width="82.5" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="YnN-bf-hOJ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rights Owner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmT-q5-Xb5">
-                                        <rect key="frame" x="100" y="30" width="103.5" height="20"/>
+                                        <rect key="frame" x="100.5" y="30" width="102.5" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="n6b-2w-raZ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIc-qC-hJx">
-                                        <rect key="frame" x="101.5" y="60" width="100.5" height="20"/>
+                                        <rect key="frame" x="102" y="60" width="99" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="zUq-Wa-IOJ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -58,7 +58,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="udQ-K5-Zge"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -70,14 +70,42 @@
                                             <constraint firstAttribute="width" constant="170" id="d8L-1A-GwO"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NG-Ze-OgS">
-                                        <rect key="frame" x="100" y="300" width="103" height="30"/>
-                                        <state key="normal" title="View on iTunes"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NG-Ze-OgS">
+                                        <rect key="frame" x="15" y="300" width="273" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="xeM-X4-w2x"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <state key="normal" title="View on iTunes">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="viewOniTunesPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="giq-ny-Gff"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIT-bW-lz3">
+                                        <rect key="frame" x="15" y="354" width="273" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="MiC-fq-U1C"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <state key="normal" title="NEXT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n4l-yO-Xhc"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kIT-bW-lz3" secondAttribute="trailing" constant="15" id="N2E-4C-8a7"/>
+                                    <constraint firstItem="2NG-Ze-OgS" firstAttribute="leading" secondItem="Lg8-f5-yNi" secondAttribute="leading" constant="15" id="PpH-gS-UOx"/>
+                                    <constraint firstItem="kIT-bW-lz3" firstAttribute="leading" secondItem="Lg8-f5-yNi" secondAttribute="leading" constant="15" id="YVS-Fa-uyg"/>
+                                    <constraint firstItem="kIT-bW-lz3" firstAttribute="top" secondItem="2NG-Ze-OgS" secondAttribute="bottom" constant="10" id="bzG-d3-y6q"/>
+                                    <constraint firstAttribute="trailing" secondItem="2NG-Ze-OgS" secondAttribute="trailing" constant="15" id="q56-aL-lQ3"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -90,10 +118,12 @@
                     </view>
                     <connections>
                         <outlet property="movieTitleLabel" destination="E9K-Ux-HI7" id="Fwn-ht-fJj"/>
+                        <outlet property="nextButton" destination="kIT-bW-lz3" id="7SW-1B-C6Z"/>
                         <outlet property="posterImageView" destination="E5c-Mt-Pyf" id="VxY-Kb-919"/>
                         <outlet property="priceLabel" destination="KZ8-j6-gmu" id="oAq-M1-Wd3"/>
                         <outlet property="releaseDateLabel" destination="YIc-qC-hJx" id="0Gd-cL-kKb"/>
                         <outlet property="rightsOwnerLabel" destination="KmT-q5-Xb5" id="U0j-Cn-ZAn"/>
+                        <outlet property="viewOnItunesButton" destination="2NG-Ze-OgS" id="FXR-xn-6wL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
