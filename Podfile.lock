@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (4.6.0)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
+  - AlamofireNetworkActivityIndicator (2.2.0):
+    - Alamofire (~> 4.5)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`)
+  - AlamofireImage (from `https://github.com/Alamofire/AlamofireImage.git`)
+  - AlamofireNetworkActivityIndicator (from `https://github.com/Alamofire/AlamofireNetworkActivityIndicator.git`)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+  AlamofireImage:
+    :git: https://github.com/Alamofire/AlamofireImage.git
+  AlamofireNetworkActivityIndicator:
+    :git: https://github.com/Alamofire/AlamofireNetworkActivityIndicator.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 098a42007eda5d417a41db44fac14abffa55b234
+    :git: https://github.com/Alamofire/Alamofire.git
+  AlamofireImage:
+    :commit: c7cf04f7e597f5344e97e39d39fa99ffbd87fe91
+    :git: https://github.com/Alamofire/AlamofireImage.git
+  AlamofireNetworkActivityIndicator:
+    :commit: da5fe47a66e05e9c3b18e2e2997b6edd60aa0c53
+    :git: https://github.com/Alamofire/AlamofireNetworkActivityIndicator.git
+
+SPEC CHECKSUMS:
+  Alamofire: 0dda98a0ed7eec4bdcd5fe3cdd35fcd2b3022825
+  AlamofireImage: 4e0cba538743dc2e36cdb5eb5e057a722560769d
+  AlamofireNetworkActivityIndicator: 1b37f625e82da75465fc624bf26cf37cabd99a42
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: eba54b2725d721b27cf1840f6a168a8bf63c330a
+
+COCOAPODS: 1.4.0
